@@ -1,0 +1,7 @@
+from datetime import timedelta
+
+# create a timedelta object representing 100 days, 10 hours, and 13 minutes.
+d = timedelta(days=100, hours=10, minutes=13)
+
+# print the object
+print("The new time delta object is: ", (d.days, d.seconds, d.microseconds))
