@@ -1,0 +1,14 @@
+from datetime import datetime
+
+def goget_datetime(feet, inches):
+    # current datetime
+    datetime_object = datetime.now()
+    return datetime_object
+
+# using the function
+datetime_now = goget_datetime(2, 3)
+
+# Print the datetime and its type
+print("Current datetime:", datetime_now)
+print("Type:", type(datetime_now))
+
