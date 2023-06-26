@@ -1,0 +1,18 @@
+from datetime import datetime
+from datetime import timedelta
+
+# current time
+now = datetime.now()
+current_time = now.time()
+print("Time now:", current_time)
+
+# subtract 60 seconds from current time via timedelta
+updated_time = now - timedelta(seconds=60)
+new_time = updated_time.time()
+print("Current time after subtracting by 60 seconds: ", new_time)
+
+# Add 2 years
+currently = datetime.now()
+updated_datetime = currently + timedelta(days=365 * 2)
+updated_date = updated_datetime.date()
+print("Current date after adding 2 years:", updated_date)
